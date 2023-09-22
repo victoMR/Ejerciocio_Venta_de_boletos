@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Compra de boletos </string>
+    <string name="etRespuesta1">1</string>
+    <string name="tvPregunta1">¿Cuantos boletos quieres ?</string>
+    <string name="rbVip">VIP : $ 900.00</string>
+    <string name="rbPalco">Palco : $ 600.00</string>
+    <string name="rbPreferente">Preferente : $ 400.00</string>
+    <string name="rbGeneral">General : $ 200.00</string>
+    <string name="btnAceptar">Aceptar</string>
+</resources>

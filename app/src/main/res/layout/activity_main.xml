@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="64dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="30dp"
+        android:text="@string/app_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/tvPregunta1"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <EditText
+        android:id="@+id/etRespuesta1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/etRespuesta1"
+        android:digits="0123456789"
+        android:maxLength="3"
+        android:textAlignment="center"
+        android:inputType="number"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rgPregunta1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="1dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbVip"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:id="@+id/rbVip"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbPalco"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:id="@+id/rbPalco"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbPreferente"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:id="@+id/rbPreferente"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbGeneral"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:id="@+id/rbGeneral"/>
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAceptar"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:backgroundTint="#000000"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <!--Etiqueta para mostrar el estado de el checkbox-->
+
+    <TextView
+        android:id="@+id/tvMensaje1"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
